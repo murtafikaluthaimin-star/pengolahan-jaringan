@@ -1,0 +1,61 @@
+Microsoft Windows [Version 10.0.26100.6584]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Bariroh>cd Downloads
+
+C:\Users\Bariroh\Downloads>cd Coba Coba
+
+C:\Users\Bariroh\Downloads\Coba Coba>dir
+ Volume in drive C is Acer
+ Volume Serial Number is 9607-90D6
+
+ Directory of C:\Users\Bariroh\Downloads\Coba Coba
+
+30/10/2025  15:23    <DIR>          .
+30/10/2025  14:15    <DIR>          ..
+09/10/2025  15:40               514 client.py
+30/10/2025  15:47               440 client_tcp.py
+16/10/2025  14:20                64 hello world.py
+11/10/2025  07:11               503 kalkulator sederhan.py
+30/10/2025  14:34             1.484 print(hello cuy).py
+09/10/2025  15:41               626 server.py
+09/10/2025  19:25             1.808 tante_terbiasa.py
+11/10/2025  07:12               485 tebak angka.py
+16/10/2025  14:47    <DIR>          test server udp server dan client
+               8 File(s)          5.924 bytes
+               3 Dir(s)  380.504.317.952 bytes free
+
+C:\Users\Bariroh\Downloads\Coba Coba>python client_tcp.py
+[CLIENT] Terhubung ke server 10.42.2.142:5000
+Client: hai
+Server: halo
+Client: khalo
+Traceback (most recent call last):
+  File "C:\Users\Bariroh\Downloads\Coba Coba\client_tcp.py", line 13, in <module>
+    client_socket.send(pesan.encode())
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+C:\Users\Bariroh\Downloads\Coba Coba>halo
+'halo' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Bariroh\Downloads\Coba Coba>
+C:\Users\Bariroh\Downloads\Coba Coba>hai unusida
+'hai' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Bariroh\Downloads\Coba Coba>python client_tcp.py
+[CLIENT] Terhubung ke server 10.42.2.142:5000
+Client: halo
+Traceback (most recent call last):
+  File "C:\Users\Bariroh\Downloads\Coba Coba\client_tcp.py", line 15, in <module>
+    data = client_socket.recv(1024).decode()
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+C:\Users\Bariroh\Downloads\Coba Coba>
+C:\Users\Bariroh\Downloads\Coba Coba>python client_tcp.py
+[CLIENT] Terhubung ke server 10.42.2.142:5000
+Client: halo
+Server: tesss
